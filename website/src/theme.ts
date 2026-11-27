@@ -56,5 +56,38 @@ export const getDesignTokens = (mode: 'light' | 'dark') => ({
   },
   typography: {
     fontFamily: 'Outfit, sans-serif',
+    h1: {
+      fontSize: 'clamp(2.25rem, 5vw, 3.75rem)',
+      fontWeight: 800,
+    },
+    h2: {
+      fontSize: 'clamp(1.85rem, 4vw, 3rem)',
+      fontWeight: 800,
+    },
+    h3: {
+      fontSize: 'clamp(1.5rem, 3vw, 2.25rem)',
+      fontWeight: 700,
+    },
+    h4: {
+      fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)',
+      fontWeight: 700,
+    },
+    h5: {
+      fontSize: 'clamp(1.1rem, 2vw, 1.35rem)',
+      fontWeight: 600,
+    },
+    h6: {
+      fontSize: 'clamp(1rem, 1.5vw, 1.15rem)',
+      fontWeight: 600,
+    },
+    body1: {
+      fontSize: 'clamp(0.95rem, 1.2vw, 1.05rem)',
+    },
+    body2: {
+      fontSize: 'clamp(0.85rem, 1vw, 0.95rem)',
+    },
+    caption: {
+      fontSize: 'clamp(0.75rem, 0.9vw, 0.85rem)',
+    },
   },
 });

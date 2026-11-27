@@ -9,6 +9,7 @@ import {  useTheme } from "@mui/material/styles";
 import { useColorMode } from "../contexts/themeContext";
 import { SITE_CONFIG } from "../constants";
 import Box from "@mui/material/Box";
+import InfoBox from "../components/InfoBox";
 
 export default function Header()
 {
@@ -25,9 +26,9 @@ export default function Header()
                 >
                     
                 {/* TODO: Add logo and navigation*/}
-                <Box>
-                    <img src={"sums.jpg"} style={{height:90}}></img>
-                </Box>
+                <InfoBox sx={{p:"5px" }}>
+                    <img src={"sums.jpg"} style={{height:70}}></img>
+                </InfoBox>
                 
                 {/* Home tab un-neccessary*/}
                 <List sx={{display:"flex", flexDirection:"row", ml:"auto", fontWeight:600}}>

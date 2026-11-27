@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import NeoButton from '../components/Button';
 import {  useTheme } from "@mui/material/styles";
 import KeyStatsCard from '../components/keyStats';
+import Partners from '../components/Partners';
 
 function App() {
  
@@ -66,18 +67,19 @@ function App() {
           <Box sx={{display:"flex", flexDirection:"column", width:"45%", gap:1}}>
             <KeyStatsCard/>
             <Box sx={{display:"flex", flexDirection:"row", width:"120%", transform:"translate(-10%, -10%)", gap:1}}> 
-              <InfoBox colour="lavender" sx={{width:"100%", transform: "rotate(2.5deg)"}}>
+              <InfoBox colour="lavender" sx={{display:{xs: "none", sm:"none", md:"block"}, width:"100%", transform: "rotate(2.5deg)"}}>
                 <Typography variant='body2'>
                   "This is the first time in <b>my 5 years</b> at Northampton that I’ve seen such a well organised and information full Welcome page."
                 </Typography>
                 <Typography variant="subtitle2">- University of Northampton SU</Typography>
               </InfoBox>
-              <InfoBox colour="butter" sx={{width:"50%", transform: "rotate(-3deg);"}}>
+              <InfoBox colour="butter" sx={{width:{xs:"100%", sm:"100%", md:"50%"}, transform: "rotate(-3deg);"}}>
                 <Typography>Trusted by <b>over 20</b> Student Unions</Typography>
               </InfoBox>
             </Box>
           </Box>
         </Box>
+        <Partners></Partners>
         
       </Box>
       </>
