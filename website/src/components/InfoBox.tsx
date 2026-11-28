@@ -12,14 +12,7 @@ interface InfoBoxProps {
   sx?: SxProps<Theme>;
 }
 
-export default function InfoBox({
-  children,
-  title,
-  offset = 4,
-  colour,
-  square = false,
-  sx,
-}: InfoBoxProps) {
+export default function InfoBox({ children, title,offset = 4, colour,square = false, sx}: InfoBoxProps) {
   const theme = useTheme();
   const shadowColour = theme.palette.mode === "dark" ? "#ffffff" : "#000000";
 
@@ -34,8 +27,7 @@ export default function InfoBox({
           color: pastelToken ? pastelToken.contrastText : "text.primary",
           borderRadius: square ? 0 : 4,
           boxShadow: `${offset}px ${offset}px 0px ${shadowColour}`,
-          border: `2px solid ${shadowColour}`,
-          p: 2.5,
+          border: `2px solid ${shadowColour}`,p: 2.5,
           transition:"background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease",
         },
         ...(Array.isArray(sx) ? sx : [sx]),

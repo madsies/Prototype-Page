@@ -30,7 +30,7 @@ export default function NeoButton({
 
           return {
             color: token.contrastText,
-            bgcolor: token.main,
+            bgcolor: theme.palette.primary.main,
             fontWeight: 700,
             borderRadius: 999,
             border: `2px solid ${shadowColor}`,
@@ -38,7 +38,7 @@ export default function NeoButton({
             transition:
               "transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s ease, border-color 0.2s ease",
             "&:hover": {
-              bgcolor: token.dark,
+              bgcolor: theme.palette.primary.dark,
               transform: `translate(${offset / 2}px, ${offset / 2}px)`,
               boxShadow: `${offset / 2}px ${offset / 2}px 0px ${shadowColor}`,
             },

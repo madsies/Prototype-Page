@@ -6,13 +6,15 @@ import { SITE_CONFIG } from '../constants';
 import InfoBox from '../components/InfoBox';
 import Typography from '@mui/material/Typography';
 import NeoButton from '../components/Button';
-import {  useTheme } from "@mui/material/styles";
 import KeyStatsCard from '../components/keyStats';
 import Partners from '../components/Partners';
+import PlatformModules from '../components/PlatformModules';
+import WhySumsSection from '../components/WhySums';
+import Footer from '../components/Footer';
+import HeavyDivider from '../components/HeavyDivider';
+import Testimonials from '../components/Testimonials';
 
 function App() {
- 
-  const theme = useTheme();
 
   return (
       
@@ -81,6 +83,27 @@ function App() {
         </Box>
         <Partners></Partners>
         
+        <Box id="modules" sx={{ scrollMarginTop: "100px" }}>
+          <PlatformModules/>
+        </Box>
+
+        <HeavyDivider/>
+        
+        <Box id="testimonials" sx={{ scrollMarginTop: "100px" }}>
+          <Testimonials/>
+        </Box>
+
+        <HeavyDivider/>
+        
+        <Box id="why-sums" sx={{ scrollMarginTop: "100px" }}>
+          <WhySumsSection/>
+        </Box>
+
+        <HeavyDivider/>
+        
+        <Box id="footer" sx={{ scrollMarginTop: "100px" }}>
+          <Footer/>
+        </Box>
       </Box>
       </>
   );
